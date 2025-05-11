@@ -1,5 +1,5 @@
-# COURSENAME
-This is the repository for the LinkedIn Learning course `course-name`. The full course is available from [LinkedIn Learning][lil-course-url].
+# Automated Software Refactoring with OpenRewrite and Generative AI
+This is the repository for the LinkedIn Learning course `Automated Software Refactoring with OpenRewrite and Generative AI`. The full course is available from [LinkedIn Learning][lil-course-url].
 
 ![lil-thumbnail-url]
 
