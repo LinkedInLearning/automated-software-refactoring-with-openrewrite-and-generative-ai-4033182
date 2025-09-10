@@ -1,0 +1,7 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.bmuschko.FrameworkMigrationOWASP
+displayName: Spring Boot 3.x migration and OWASP security check
+description: Upgrades to Spring Boot 3.x and executes a security check.
+recipeList:
+  - org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0
+  - io.moderne.devcenter.SecurityStarter

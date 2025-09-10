@@ -1,0 +1,15 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.bmuschko.SourceIntrospection
+displayName: Source introspection
+description: Inspects Java source code for specific information.
+recipeList:
+  - org.openrewrite.java.search.FindTypes:
+      fullyQualifiedTypeName: java.util.List
+  - org.openrewrite.java.search.FindMethods:
+      methodPattern: java.util.List add(..)
+  - org.openrewrite.maven.search.DependencyInsight:
+      groupIdPattern: com.fasterxml.jackson.module
+      artifactIdPattern: jackson-module-*
+      scope: compile
+      version: 1.x
+      onlyDirect: true

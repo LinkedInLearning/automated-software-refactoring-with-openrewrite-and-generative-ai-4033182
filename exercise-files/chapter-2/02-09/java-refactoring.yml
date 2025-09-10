@@ -1,0 +1,10 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.bmuschko.JavaRefactoring
+displayName: Java refactoring
+description: Refactors Java projects and enforced desired naming conventions.
+recipeList:
+  - org.openrewrite.java.AddLicenseHeader:
+      licenseText: Copyright ${CURRENT_YEAR} the original author or authors.
+  - org.openrewrite.java.OrderImports
+  - org.openrewrite.java.NoStaticImport:
+      methodPattern: java.util.Collections emptyList()

@@ -1,0 +1,6 @@
+type: specs.openrewrite.org/v1beta/recipe
+name: com.bmuschko.AddLicenseHeader
+displayName: Adds a license header to a class definition.
+recipeList:
+  - org.openrewrite.java.AddLicenseHeader:
+      licenseText: Copyright ${CURRENT_YEAR} the original author or authors...
